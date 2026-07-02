@@ -1,6 +1,37 @@
 :root{
-    --Primary:white;
-    --Secondary:white;
-    --Accent1:white;
-    --Accent2:white;
+    --Orange:#bb4d00;
+    --Brown:#3a2628;
+    --Yellow:#c4ad83;
+    --Charcoal:#37423d;
+    --lavender:#d5dcf9;
+}
+
+header{
+    display: flex;
+    flex: 200px auto;
+}
+
+header img{
+    align-self: flex-start;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.nav-links{
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.nav-links a{
+    text-decoration: none;
+    color: var(--lavender)
+
+}
+.nav-links a:hover {
+    color:var(--Charcoal);
+    background-color: var(--lavender);
 }
