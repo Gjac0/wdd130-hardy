@@ -3,17 +3,25 @@
     --Brown:#3a2628;
     --Yellow:#c4ad83;
     --Charcoal:#37423d;
-    --lavender:#d5dcf9;
+    --lavender:#d5dcf9;    
+    
+    --font-display: "Fraunces", Georgia, serif;
+    --font-body: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 header{
     display: flex;
     flex: 200px auto;
+    background-color: var(--Brown);
+    color: var(--lavender);
 }
+
 
 header img{
     align-self: flex-start;
 }
+
+
 ul {
   list-style-type: none;
   margin: 0;
