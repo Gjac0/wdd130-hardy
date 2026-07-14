@@ -43,3 +43,122 @@ ul {
     color:var(--Charcoal);
     background-color: var(--lavender);
 }
+
+main{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0;
+}
+
+.hero button{
+    background-color: var(--Orange);
+    color: var(--lavender);
+    border: none;
+    padding: 20px 50px;
+    font-size: 1.3rem;
+    font-family: var(--font-display);
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.hero button:hover{
+    background-color: var(--Charcoal);
+}
+
+.first-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    padding: 60px 40px;
+}
+
+.first-section img{
+    width: 100%;
+    max-width: 500px;
+    display: block;
+}
+
+.first-section h2{
+    font-family: var(--font-display);
+    color: var(--Brown);
+}
+
+.first-section p{
+    font-family: var(--font-body);
+    line-height: 1.7;
+}
+
+.second-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    padding: 60px 40px;
+}
+
+.second-section h2{
+    font-family: var(--font-display);
+    color: var(--Brown);
+}
+
+.second-section p{
+    font-family: var(--font-body);
+    line-height: 1.7;
+}
+
+.buy-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buy-button button{
+    width: 300px;
+    height: 300px;
+    background-color: var(--Orange);
+    color: var(--lavender);
+    border: none;
+    font-size: 2rem;
+    font-family: var(--font-display);
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.buy-button button:hover{
+    background-color: var(--Charcoal);
+}
+
+footer{
+    background-color: var(--Brown);
+    color: var(--lavender);
+    text-align: center;
+    padding: 25px;
+    margin-top: 50px;
+}
+
+@media screen and (max-width: 800px){
+
+    .first-section,
+    .second-section{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .first-section img{
+        margin: 0 auto;
+    }
+
+    .buy-button button{
+        width: 220px;
+        height: 220px;
+        font-size: 1.5rem;
+    }
+
+}
