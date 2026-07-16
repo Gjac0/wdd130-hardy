@@ -8,7 +8,104 @@
     --font-display: "Fraunces", Georgia, serif;
     --font-body: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
 }
+#main-body{
+    margin: 0;
+    background: linear-gradient(135deg, var(--Charcoal) 0%, var(--Brown) 45%, var(--Orange) 100%);
+    background-attachment: fixed;
+    min-height: 100vh;
+}
 
+#main-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#main-nav{
+    align-self: flex-start;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: flex-start;
+}
+#main-nav a{
+    text-decoration: none;
+    color: var(--lavender);
+    font-family: var(--font-body);
+    font-size: 1rem;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: .3s ease;
+}
+ 
+#main-nav a:hover{
+    color: var(--Charcoal);
+    background-color: var(--lavender);
+}
+ 
+#logo_link{
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+ 
+#logo_link img{
+    height: 50px;
+    width: auto;
+}
+ 
+#logo_link:hover{
+    background-color: transparent;
+}
+ 
+#main-header h1{
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+    color: var(--lavender);
+    text-shadow: 0 0 10px rgba(213, 220, 249, 0.6), 0 0 20px rgba(187, 77, 0, 0.5), 2px 2px 0px rgba(0,0,0,0.25);
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0 15px 0;
+}
+#about-section,
+#goal-section{
+    background-color: var(--lavender);
+    border-radius: 16px;
+    padding: 40px;
+    margin: 40px auto;
+    max-width: 900px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+ 
+#about-section img,
+#goal-section img{
+    max-width: 100%;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto 20px auto;
+}
+ 
+#about-section h2,
+#goal-section h2{
+    font-family: var(--font-display);
+    color: var(--Brown);
+    text-align: center;
+    margin-top: 0;
+}
+ 
+#about-section p,
+#goal-section p{
+    font-family: var(--font-body);
+    line-height: 1.7;
+    color: var(--Charcoal);
+}
+
+/* ---------------------------- */
 header{
     display: flex;
     flex: 200px auto;
